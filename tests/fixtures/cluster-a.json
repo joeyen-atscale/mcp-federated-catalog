@@ -1,0 +1,23 @@
+{
+  "models": [
+    {
+      "unique_name": "sales_model",
+      "name": "Sales Model",
+      "measures": [
+        { "unique_name": "Revenue", "name": "Revenue", "data_type": "numeric" },
+        { "unique_name": "Units Sold", "name": "Units Sold", "data_type": "integer" }
+      ],
+      "dimensions": [
+        { "unique_name": "Date", "name": "Date", "dim_type": "time" }
+      ]
+    },
+    {
+      "unique_name": "inventory_model",
+      "name": "Inventory Model",
+      "measures": [
+        { "unique_name": "Stock Count", "name": "Stock Count", "data_type": "integer" }
+      ],
+      "dimensions": []
+    }
+  ]
+}

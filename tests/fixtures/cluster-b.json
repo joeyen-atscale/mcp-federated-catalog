@@ -1,0 +1,24 @@
+{
+  "models": [
+    {
+      "unique_name": "sales_model",
+      "name": "Sales Model",
+      "measures": [
+        { "unique_name": "Revenue", "name": "Revenue", "data_type": "numeric" },
+        { "unique_name": "Discount", "name": "Discount", "data_type": "numeric" }
+      ],
+      "dimensions": [
+        { "unique_name": "Date", "name": "Date", "dim_type": "time" },
+        { "unique_name": "Region", "name": "Region", "dim_type": "standard" }
+      ]
+    },
+    {
+      "unique_name": "hr_model",
+      "name": "HR Model",
+      "measures": [
+        { "unique_name": "Headcount", "name": "Headcount", "data_type": "integer" }
+      ],
+      "dimensions": []
+    }
+  ]
+}

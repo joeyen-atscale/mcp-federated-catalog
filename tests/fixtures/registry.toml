@@ -1,0 +1,25 @@
+[[clusters]]
+name = "cluster-a"
+endpoint = "cluster-a.example.com:15432"
+supported_backends = ["sql"]
+priority = 0
+required = true
+tags = ["prod"]
+
+[clusters.auth]
+type = "direct"
+pg_user = "CLUSTER_A_USER"
+pg_pass_env = "CLUSTER_A_PASS"
+
+[[clusters]]
+name = "cluster-b"
+endpoint = "cluster-b.example.com:15432"
+supported_backends = ["sql"]
+priority = 1
+required = false
+tags = ["staging"]
+
+[clusters.auth]
+type = "direct"
+pg_user = "CLUSTER_B_USER"
+pg_pass_env = "CLUSTER_B_PASS"
